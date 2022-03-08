@@ -4,8 +4,8 @@ import io.github.wechaty.schemas.MiniProgramPayload
 
 class MiniProgram(var payload: MiniProgramPayload) {
 
-    fun appId():String?{
-        return payload.appId
+    fun appid():String?{
+        return payload.appid
     }
 
     fun titile():String?{
@@ -30,6 +30,14 @@ class MiniProgram(var payload: MiniProgramPayload) {
 
     fun thumbKey():String?{
         return payload.thumbKey
+    }
+    
+    fun iconUrl():String?{
+        return payload.iconUrl
+    }
+    
+    fun shareId():String?{
+        return payload.shareId
     }
 
 

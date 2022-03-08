@@ -166,3 +166,7 @@ token.txt
 Main2.java
 Main3.java
 aliyun/*
+*/.settings/*
+.settings/*
+*.classpath
+*.project
