@@ -170,3 +170,5 @@ aliyun/*
 .settings/*
 *.classpath
 *.project
+/.metadata/
+*.bat

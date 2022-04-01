@@ -2,9 +2,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <parent>
-        <groupId>io.github.wechaty</groupId>
+        <groupId>io.github.xuhai19901018</groupId>
         <artifactId>wechaty-parent</artifactId>
-        <version>0.1.6-SNAPSHOT</version>
+        <version>1.0.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>wechaty</artifactId>
@@ -18,19 +18,19 @@
     <dependencies>
 
         <dependency>
-            <groupId>io.github.wechaty</groupId>
+            <groupId>io.github.xuhai19901018</groupId>
             <artifactId>wechaty-puppet</artifactId>
             <version>${project.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>io.github.wechaty</groupId>
+            <groupId>io.github.xuhai19901018</groupId>
             <artifactId>wechaty-puppet-hostie</artifactId>
             <version>${project.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>io.github.wechaty</groupId>
+            <groupId>io.github.xuhai19901018</groupId>
             <artifactId>wechaty-puppet-mock</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>

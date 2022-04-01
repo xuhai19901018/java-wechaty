@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>wechaty-parent</artifactId>
-        <groupId>io.github.wechaty</groupId>
-        <version>0.1.6-SNAPSHOT</version>
+        <groupId>io.github.xuhai19901018</groupId>
+        <version>1.0.2</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -17,7 +17,7 @@
             <artifactId>kotlin-stdlib</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.github.wechaty</groupId>
+            <groupId>io.github.xuhai19901018</groupId>
             <artifactId>wechaty-puppet</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -118,7 +118,7 @@
                 </executions>
             </plugin>
             <!-- Javadoc -->
-            <plugin>
+           <!--  <plugin>
                 <groupId>org.jetbrains.dokka</groupId>
                 <artifactId>dokka-maven-plugin</artifactId>
                 <version>${dokka.version}</version>
@@ -135,7 +135,7 @@
                         <dir>src/main/kotlin</dir>
                     </sourceDirectories>
                 </configuration>
-            </plugin>
+            </plugin> -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>

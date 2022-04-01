@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.github.wechaty</groupId>
+    <groupId>io.github.xuhai19901018</groupId>
     <artifactId>wechaty-parent</artifactId>
     <packaging>pom</packaging>
-    <version>0.1.6-SNAPSHOT</version>
+    <version>1.0.2</version>
     <name>kotlin-wechaty</name>
 
     <description>
@@ -219,53 +219,56 @@
 <!--                    </execution>-->
 <!--                </executions>-->
 <!--            </plugin>-->
+			<plugin>
+			      <groupId>org.apache.maven.plugins</groupId>
+			      <artifactId>maven-gpg-plugin</artifactId>
+			      <version>1.5</version>
+			      <executions>
+			        <execution>
+			          <id>sign-artifacts</id>
+			          <phase>verify</phase>
+			          <goals>
+			            <goal>sign</goal>
+			          </goals>
+			        </execution>
+			      </executions>
+		    </plugin>
         </plugins>
     </build>
 
 
-    <contributors>
-        <contributor>
-            <name>Zhengxin Diao</name>
-            <email>diaozxin@gmail.com</email>
-        </contributor>
-        <contributor>
-            <name>Xiaoya ren</name>
-        </contributor>
-    </contributors>
+ 	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
 
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-        </license>
-    </licenses>
+	<!-- 开源许可证 -->
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
 
-    <developers>
-        <developer>
-            <name>Zhengxin Diao</name>
-            <email>diaozxin@gmail.com</email>
-        </developer>
-        <developer>
-            <name>Xiaoya ren</name>
-        </developer>
-    </developers>
+	<!-- 开发者信息 -->
+	<developers>
+		<developer>
+			<name>xuhai19901018</name>
+			<email>xuhai19901018@outlook.com</email>
+		</developer>
+	</developers>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>sonatype</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>sonatype</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
-
-    <scm>
-        <url>https://github.com/Chatie/grpc</url>
-        <connection>scm:git:ssh://github.com/Chatie/grpc.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/Chatie/grpc.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
-
+	<!--开源地址 -->
+	<scm>
+		<url>https://github.com/xuhai19901018/java-wechaty</url>
+		<connection>scm:git:git://github.com/xuhai19901018/java-wechaty.git</connection>
+		<developerConnection>scm:git:ssh://github.com/xuhai19901018/java-wechaty.git</developerConnection>
+	</scm>
+ 
 </project>
